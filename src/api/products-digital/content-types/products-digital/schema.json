@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products_digitals",
+  "info": {
+    "singularName": "products-digital",
+    "pluralName": "products-digitals",
+    "displayName": "products-digitals"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Marketing",
+        "E-Commerce",
+        "Security"
+      ]
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "blocks"
+    }
+  }
+}
